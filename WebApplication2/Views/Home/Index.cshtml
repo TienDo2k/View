@@ -1,0 +1,23 @@
+﻿
+@model List<WebApplication2.Models.SinhVien>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Thông tin Sinh Viên </h1>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Addess</th>
+    </tr>
+    @foreach(var item in Model) { 
+        <tr>
+            <th>@item.ID</th>
+            <th>@item.Name</th>
+            <th>@item.Sex</th>
+            <th>@item.Address</th>
+        </tr>
+    }
+</table>
